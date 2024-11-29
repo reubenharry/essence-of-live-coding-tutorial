@@ -38,12 +38,15 @@ executable essence-of-live-coding-tutorial
   main-is:             Main.hs
   build-depends:
       base >= 4.11 && < 5
-    , gloss >= 1.13
+    -- , gloss >= 1.13
+    , brillo
     , vector-space >= 0.16
+    , mtl
+    , transformers
     , bytestring >= 0.10
     , utf8-string >= 1.0.1
     , essence-of-live-coding >= 0.2.4
-    , essence-of-live-coding-gloss >= 0.2.4
+    -- , essence-of-live-coding-gloss >= 0.2.4
     , essence-of-live-coding-warp >= 0.2.4
 
   if os(linux) && flag(pulse)
